@@ -1,0 +1,20 @@
+spring:
+  session:
+    store-type: redis
+  redis:
+    cluster:
+      nodes:
+      - localhost:7000
+      - localhost:7001
+      - localhost:7002
+      - localhost:7003
+      - localhost:7004
+      - localhost:7005
+      
+logging:
+  level: 
+    root: INFO
+    org.springframework.data.redis: DEBUG
+    org.springframework.session.data.redis: TRACE
+    org.springframework.data.redis.listener: TRACE
+    
